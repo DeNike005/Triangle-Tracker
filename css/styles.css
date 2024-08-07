@@ -5,23 +5,49 @@
     font-weight: 600;
 }
 .container{
-    /* background-image: linear-gradient(90deg, #efd5ff 0%, #515ada 100%); */
     background-color: #8BC6EC;
-    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    background-image: linear-gradient(90deg, #8BC6EC 0%, #9599E2 100%);
     height: 700px;
 }
 h1{
     text-align: center;
     font-size: 60px;
     color: black;
-    padding-top: 50px;
+    letter-spacing: 10px;
+
+    animation: spread 6s linear infinite ;
+}
+
+@keyframes spread {
+
+20%{
+    letter-spacing: 13px;
+    color: white;
+}
+40%{
+    letter-spacing: 16px;
+    color: rgb(205, 43, 43);
+}
+60%{
+    letter-spacing: 13px;
+    color: rgb(43, 31, 173);
+}
+80%{
+    letter-spacing: 12px;
+    color: rgb(134, 210, 27);
+}
+100%{
+    letter-spacing: 10px;
+    color: white;
+}
+
 }
 
 #triangle_cont{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    padding-top: 30px;
 }
 label{
     font-size: 25px;
@@ -50,7 +76,8 @@ button{
     font-size: 24px;
 }
 #result{
-    margin-top: 50px;
+
+    margin-top: 200px;
     font-size: 50px;
     color: rgb(27, 15, 0);
     text-align: center;
